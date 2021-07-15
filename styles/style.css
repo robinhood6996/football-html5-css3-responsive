@@ -1,0 +1,238 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* Common Styles */
+body{
+ font-family: 'Poppins', sans-serif;
+ margin:0;
+ padding: 0;
+ background: #FFFFFF;
+
+}
+
+/*--------------
+ Hero Section
+ ------------- */
+/* main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+    .container{
+    background-color: #2D25A0;
+    }
+
+ .sliders{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+    padding-top: 150px;
+    padding-bottom: 86px;
+
+ }
+ .slider-details{
+     width: 485px;
+ }
+
+ .slider-details .slider-title{
+     color: #FFFFFF;
+     font-size: 64px;
+     margin-bottom: 27px;
+ }
+
+ .watch-btn{
+     width: 168px;
+     height: 44px;
+     background: #E02C6D;
+     padding: 10px 24px;
+     color: #FFFFFF;
+     border: none;
+     font-size: 16px;
+
+ }
+ .watchicon{
+     margin-left: 10px;
+ }
+ .sliders .slider-img img{
+     width: 560px;
+ }
+
+/* -----------------
+ Blogs Styles
+ --------------*/
+ .blogs-container{
+        width: 1140px;
+        margin-top: 70px;
+        justify-content: center;
+        margin-left: 180px;
+ }
+ .blogs{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-column-gap: 30px;
+     grid-row-gap: 27px;
+ }
+
+.blog{
+    width: 300px;
+    /* height: 474px; */
+    padding: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+ .blog .thumbnail img{
+     width: 300px;
+     height: 256px;
+ }
+ /* .blog-info{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ } */
+ .blog h3{
+    margin-top:16px;
+    margin-bottom: 10px;
+   font-size: 28px;
+   font-weight: bold;
+   color: #18191F;
+ }
+ .blog-info p{
+     margin-top: 10px;
+     margin-bottom: 33px;
+     color: #6C6C6C;
+     font-size: 16px;
+ }
+
+
+ /* videos Style*/
+ .video-container{
+     margin-top: 165px;
+     margin-left: 182px;
+     margin-right: 158px;
+ }
+ .video{
+     display: flex;
+     flex-wrap: wrap;
+ }
+.video .video-details{
+    width: 469px;
+    margin-right: 66px;
+}
+.video .video-details h2{
+    font-size: 48px;
+}
+ .video .video-thumb img{
+     width: 567px;
+ }
+ .video p{
+      color: #6C6C6C;
+     font-size: 16px;
+ }
+
+ /* Footer Style */
+
+ footer{
+    margin-top: 158px;
+    margin-bottom: 63px;
+    display: flex;
+    justify-content: center;
+
+ }
+ .about {
+    width: 475px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ .logo img{
+     width: 483px;
+     height: 110px;
+     margin-bottom: 20px;
+ }
+ .socials{
+     width: 170px;
+     height: 32px;
+     margin-bottom: 20px;
+ }
+
+ .socials i {
+   background: #969BAB;
+    font-size: 20px;
+    border-radius:15px;
+    color: white;
+    padding: 5px;
+}
+
+
+
+/* Media Query */
+
+/* ---------------
+Mobile Device
+----------------*/
+
+ @media only screen and (max-width:688px) {
+     .container,.blogs-container{
+         width: 100%;
+     }
+     .sliders{
+         padding-top: 0;
+     }
+     .slider-details{
+            margin-left: 22px;
+     }
+     .sliders .slider-img img{
+           width: 330px;
+           margin-top: 55px;
+       }
+        .blogs{
+               grid-template-columns: repeat(1,1fr);
+        }
+        .blogs-container, .video-container{
+           margin-left: 23px;
+        }
+        .video-container{
+            margin-top: 0;
+        }
+        .video-details{
+            margin-bottom: 27px;
+        }
+        .video .video-thumb img {
+          width: 330px;
+       }
+       .logo img{
+           
+        width: 330px;
+        height: auto;
+       }
+       .socials{
+           width: auto;
+       }
+    }
+
+    /* For Tablets */
+
+     @media only screen and (min-width:689px) and (max-width:992px) {
+         .container,.blogs-container{
+            width: 100%;
+        }
+        .slider-details{
+            margin-bottom: 40px;
+        }
+
+          .blogs{
+               grid-template-columns: repeat(2,1fr);
+        }
+
+        .blogs-container, .video-container{
+            margin-left: 22px;
+        }
+        .video-details{
+            margin-bottom: 30px;
+        }
+        footer{
+                margin-top: 70px;
+        }
+    }
